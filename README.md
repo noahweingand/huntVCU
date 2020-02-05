@@ -1,5 +1,6 @@
 # CMSC-491
 Final project for CMSC 491 - User Interface Design
+<<<<<<< HEAD
 
 # Mockup (Jan 30, 2020)
 Main Game
