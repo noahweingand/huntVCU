@@ -1,4 +1,24 @@
-h1 {
-    font-size:500px;
-    color: red;
+#main-application {
+    border-style: solid;
+    border-color: rebeccapurple; 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    margin-top: 8%;
+    width: 100%; 
+}
+
+.main-panel {
+    position: relative;
+    margin: 0.5%;
+    width: 32%;
+    border-style: solid;
+    border-color: rebeccapurple; 
+    display: inline-block;
+}
+
+#main-application:after {
+    display:inline-block;
+    width:100%;
+    content:'';
 }
