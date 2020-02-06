@@ -1,0 +1,19 @@
+{
+  "name": "cmsc-491",
+  "version": "1.0.0",
+  "description": "Final project for CMSC 491 - User Interface Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahweingand/cmsc-491.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahweingand/cmsc-491/issues"
+  },
+  "homepage": "https://github.com/noahweingand/cmsc-491#readme"
+}
