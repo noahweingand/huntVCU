@@ -5,7 +5,7 @@
 
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">SCAM RAMS</a>
-            <button class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Game Settings</button>
+            <button id="show3" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Game Settings</button>
             <button id="show" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Profile Settings</button>
             <button id="show2" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Help</button>
         </nav>
@@ -22,7 +22,13 @@
 
         <div class="center2 hideform">
             <button id="close2" style="float: right;">X</button>
-                <div>Here is the help page.</div>
+                <div>Here is the help page. It is currently under development</div>
+            </form>
+        </div>
+
+        <div class="center3 hideform">
+            <button id="close3" style="float: right;">X</button>
+                <div>Here is the game settings page. It is currently under development.</div>
             </form>
         </div>
     
@@ -89,6 +95,15 @@
 
             $('#close2').on('click', function () {
                 $('.center2').hide();
+                $('#show').show();
+            })
+            $('#show3').on('click', function () {
+                $('.center3').show();
+                $(this).hide();
+            })
+
+            $('#close3').on('click', function () {
+                $('.center3').hide();
                 $('#show').show();
             })
         </script>
