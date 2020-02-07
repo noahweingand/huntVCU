@@ -19,7 +19,7 @@
     width: 32%;
     padding: 1%; 
     border-style: solid;
-    border-color: grey; 
+    border-color: lightgray; 
     display: inline-block;
 }
 
@@ -36,3 +36,9 @@
     width: 90%;
 }
 
+.list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
