@@ -1,19 +1,25 @@
-#main-application {
-    border-style: solid;
-    border-color: rebeccapurple; 
+#main-application { 
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
-    margin-top: 8%;
     width: 100%; 
+}
+
+.top-button {
+    margin:auto; 
+}
+
+.navbar {
+    margin-bottom: 30px;
 }
 
 .main-panel {
     position: relative;
     margin: 0.5%;
     width: 32%;
+    padding: 1%; 
     border-style: solid;
-    border-color: rebeccapurple; 
+    border-color: grey; 
     display: inline-block;
 }
 
@@ -22,3 +28,11 @@
     width:100%;
     content:'';
 }
+
+.progress {
+    display: inline-block; 
+    text-align: center;
+    margin: 1% auto;
+    width: 90%;
+}
+

@@ -2,16 +2,34 @@
     <html>
         {{>header}}
     <body>
+
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">SCAM RAMS</a>
+            <button class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Game Settings</button>
+            <button class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Profile Settings</button>
+            <button class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Help</button>
+        </nav>
     
-        <div id="main-application" align="">
+        <div id="main-application">
             <div class="main-panel" id="left-panel">
-                content hunt
+                <div>Hunt</div>
+                <div>
+                    <img src="/google-map-web.jpg">
+                </div>
             </div>
             <div class="main-panel" id="mid-panel">
-                clue and difficulty
+                <div>Difficulty/clues/progress</div>
+                <div id="clue">
+                    Clues
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
             </div>
             <div class="main-panel" id="right-panel">
-                objective
+                <div>Objective</div>
+                <div>Obj 1</div>
+                <div>Obj 2</div>
             </div>
         </div>
 
