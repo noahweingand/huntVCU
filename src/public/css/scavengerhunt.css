@@ -1,25 +1,58 @@
 #main-application { 
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
-    width: 100%; 
+    width: 100%;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #000000; 
 }
 
 .top-button {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    color: #000000;
+    border-radius: 5px;
+    border-width: 3px;
+    /* Button Implementation
+    border-color: #FFFFFF;
+    background: -moz-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: -webkit-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: linear-gradient(135deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    */
+    color: #FFFFFF;
+    border-color: #000000;
+    background: #000000;
+
     margin:auto; 
 }
 
+.top-button:hover{
+    /* Button Implementation
+    color: #FFFFFF;
+    */
+    color: #FFBA00;
+    
+}
+
 .navbar {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    background-color: #000000;
+    text-shadow: 
+    -1px -1px 0 #F5F5F5,
+    1px -1px 0 #F5F5F5,
+    -1px 1px 0 #F5F5F5,
+    1px 1px 0 #F5F5F5; 
     margin-bottom: 30px;
 }
 
 .main-panel {
     position: relative;
     margin: 0.5%;
-    width: 32%;
+    width: 40%;
     padding: 1%; 
     border-style: solid;
-    border-color: lightgray; 
+    border-color: #206A9D; 
     display: inline-block;
 }
 
@@ -30,6 +63,7 @@
 }
 
 .progress {
+    height: 100%;
     display: inline-block; 
     text-align: center;
     margin: 1% auto;
