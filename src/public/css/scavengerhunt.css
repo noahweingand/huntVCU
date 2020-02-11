@@ -1,12 +1,27 @@
 #main-application { 
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
+    display: table; 
     width: 100%;
     background-color: #FFFFFF;
     border-style: solid;
-    border-color: #000000; 
+    border-color: #000000;
+}
+
+#main-application-extension {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #000000;
 }
 
 .top-button {
@@ -47,12 +62,24 @@
 }
 
 .main-panel {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
     margin: 0.5%;
-    width: 40%;
+    width: 50%;
     padding: 1%; 
     border-style: solid;
-    border-color: #206A9D; 
+    border-color: #FFBA00; 
+    display: table-cell;
+}
+
+.bottom-main-panel {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    position: relative;
+    margin: 0.5%;
+    width: 48.5%;
+    padding: 1%; 
+    border-style: solid;
+    border-color: #FFBA00; 
     display: inline-block;
 }
 
