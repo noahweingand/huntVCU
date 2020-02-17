@@ -1,4 +1,4 @@
-#main-application { 
+#main-application, #main-application-extension { 
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
     padding-left: 20px;
@@ -11,17 +11,27 @@
     border-color: #000000;
 }
 
-#main-application-extension {
+#enter-answer {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
-    display: inline-block;
-    width: 100%;
-    background-color: #FFFFFF;
-    border-style: solid;
     border-color: #000000;
+    border-radius: 5px;
+    border-width: 3px; 
+    color: #000000;
+    background: -moz-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: -webkit-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: linear-gradient(135deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    height: 92%;
+}
+
+#enter-answer:hover{
+    color: #FFFFFF; 
+}
+
+#answer-box {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    border-color: #000000;
+    border-radius: 5px;
+    border-width: 3px; 
 }
 
 .top-button {
@@ -104,14 +114,7 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.center {
-    margin: auto;
-    width: 60%;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.center2, .center3 {
+.center, .center2, .center3 {
     margin: auto;
     width: 60%;
     padding: 20px;
