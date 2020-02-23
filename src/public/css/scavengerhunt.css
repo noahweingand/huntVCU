@@ -7,8 +7,6 @@
     display: table; 
     width: 100%;
     background-color: #FFFFFF;
-    border-style: solid;
-    border-color: #000000;
 }
 
 #enter-answer {
@@ -35,8 +33,7 @@
 }
 
 #mapclue {
-
-    margin:auto;
+    margin:auto; 
 }
 
 .top-button {
@@ -79,7 +76,7 @@
 .main-panel {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
-    margin: 0.5%;
+    margin: 1%;
     width: 50%;
     padding: 1%; 
     border-style: solid;
@@ -95,7 +92,9 @@
     padding: 1%; 
     border-style: solid;
     border-color: #FFBA00; 
-    display: inline-block;
+    display: table-cell;
+    overflow:hidden;
+    vertical-align:top;
 }
 
 #main-application:after {
@@ -115,7 +114,7 @@
 .list-group{
     max-height: 300px;
     margin-bottom: 10px;
-    overflow:scroll;
+    overflow-y:scroll;
     -webkit-overflow-scrolling: touch;
 }
 

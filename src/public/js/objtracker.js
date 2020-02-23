@@ -66,7 +66,7 @@ $.each(allObj, function(i, v) {
     (function (v) {
         $("#" + v.name).click(() => {
             chosenObj = v.name;
-	        $('#difficulty').text(v.diff); 
+	        $('#difficulty').text("Difficulty: " + v.diff); 
 	        $('#clue').text(v.clue); 
 	        $('#mapclue').attr("src", v.img).width("100%"); 
         }); 
