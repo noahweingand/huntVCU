@@ -2,6 +2,11 @@ Acknowledgments:
 
   Branding:
   https://webstandards.vcu.edu/requirements/branding/
+  https://brand.vcu.edu/content/index/guid/general_rules?parent=16
+  https://brand.vcu.edu/content/index/guid/master_mark_history?parent=26
+
+  Logo (SCAM RAMZ):
+  https://www.freelogodesign.org/
 
   Color Scheme: 
   VCU: https://usteamcolors.com/virginia-commonwealth-university-colors/
