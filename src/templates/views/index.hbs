@@ -49,7 +49,7 @@
             </div>
 
             <div class="main-panel" id="top-right-panel">
-                <h1 id="top-right-text"><strong>Brought to you by</strong></h1>
+                <h1 id="top-right-text">Clues</h1>
                 <div><img src="/Logos.png" style='width: 436px; height: 500px' id="mapclue"></div>
                 <div class="input-group">
                     <div class="input-group mb-3">
@@ -57,37 +57,6 @@
                         <div></div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <div id="main-application-extension">
-
-            <div class="bottom-main-panel" id="bottom-right-panel">
-                <div class="panel panel-primary" id="result_panel">
-                    <div class="panel-heading"><h1 class="panel-title"><strong>Objectives</strong></h1></div>
-                    <h2 id = "info">Click a spot to reveal a clue!</h2>
-                    <div>If you think you know where the spot is, type it above.</div>
-                    <div class="panel-body">
-                        <ul class="list-group">
-                            <li id="s1" class="list-group-item"><button><strong>Spot 1</strong></button></li>
-                            <li id="s2" class="list-group-item"><button><strong>Spot 2</strong></button></li>
-                            <li id="s3" class="list-group-item"><button><strong>Spot 3</strong></button></li>
-                            <li id="s4" class="list-group-item"><button><strong>Spot 4</strong></button></li>
-                            <li id="s5" class="list-group-item"><button><strong>Spot 5</strong></button></li>
-                            <li id="s6" class="list-group-item"><button><strong>Spot 6</strong></button></li>
-                            <li id="s7" class="list-group-item"><button><strong>Spot 7</strong></button></li>
-                            <li id="s8" class="list-group-item"><button><strong>Spot 8</strong></button></li>
-                            <li id="s9" class="list-group-item"><button><strong>Spot 9</strong></button></li>
-                            <li id="s10" class="list-group-item"><button><strong>Spot 10</strong></button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-main-panel" id="bottom-left-panel">
-                <h1 id="difficulty"><strong>Difficulty</strong></h1>
-                <h2><strong>Clues:</strong></h2>
                 <div id="clue">Clues pop up here</div>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">25%</div>
@@ -96,13 +65,41 @@
 
         </div>
 
+        <div id="main-application-extension">
+
+            <div class="bottom-main-panel" id="bottom-left-panel">
+                <div class="panel panel-primary" id="result_panel">
+                    <div class="panel-heading"><h1 class="panel-title"><strong>Objectives</strong></h1></div>
+                    <h2 id = "info">Click a spot to reveal a clue!</h2>
+                    <div>If you think you know where the spot is, type it above.</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li id="s1" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 1</strong></button></li>
+                            <li id="s3" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 3</strong></button></li>
+                            <li id="s4" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 4</strong></button></li>
+                            <li id="s5" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 5</strong></button></li>
+                            <li id="s6" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 6</strong></button></li>
+                            <li id="s7" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 7</strong></button></li>
+                            <li id="s8" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 8</strong></button></li>
+                            <li id="s9" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 9</strong></button></li>
+                            <li id="s10" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 10</strong></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
         <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhdXJlYSIsImEiOiJjazZpYW9jdXYzMzhoM2VxZjkweDhucWxpIn0.wncNvrarBxvfGydMdy0ZgQ';
+            
             var map = new mapboxgl.Map({
-            container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-77.45316296360596, 37.548193997957185], // starting position
-            zoom: 14 // starting zoom
+                container: 'map', // container id
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-77.45316296360596, 37.548193997957185], // starting position
+                zoom: 14 // starting zoom
             });
             
             // Add geolocate control to the map.

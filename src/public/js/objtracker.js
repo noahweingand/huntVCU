@@ -66,6 +66,10 @@ $.each(allObj, function(i, v) {
     (function (v) {
         $("#" + v.name).click(() => {
             chosenObj = v.name;
+            if(chosenObj !== undefined){
+                $('#top-right-text').text('Image Clue:'); 
+                $('#top-right-text').css('font-weight', 'Bold')
+            }
 	        $('#difficulty').text("Difficulty: " + v.diff); 
 	        $('#clue').text(v.clue); 
 	        $('#mapclue').attr("src", v.img).width("100%"); 

@@ -11,14 +11,26 @@
 
 #enter-answer {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    border-color: #000000;
-    border-radius: 5px;
-    border-width: 3px; 
+    border-color: rgb(190, 190, 190);
+    border-radius: 1px;
+    border-width: 1px; 
     color: #000000;
     background: -moz-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
     background: -webkit-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
     background: linear-gradient(135deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
     height: 92%;
+}
+
+.obj-btn {
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    background: -moz-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: -webkit-linear-gradient(-45deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    background: linear-gradient(135deg, #FFBA00 0%, #F7D214 30%, #FCF029 70%);
+    height: 92%;
+}
+
+.obj-btn:hover{
+    color: #FFFFFF; 
 }
 
 #enter-answer:hover{
@@ -27,9 +39,9 @@
 
 #answer-box {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    border-color: #000000;
+    border-color: rgb(190, 190, 190);
     border-radius: 5px;
-    border-width: 3px; 
+    border-width: 1px; 
 }
 
 #mapclue {
@@ -50,7 +62,6 @@
     color: #FFFFFF;
     border-color: #000000;
     background: #000000;
-
     margin:auto; 
 }
 
@@ -76,18 +87,19 @@
 .main-panel {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
-    margin: 1%;
+    margin-left: 100%;
     width: 50%;
     padding: 1%; 
     border-style: solid;
     border-color: #FFBA00; 
+
     display: table-cell;
 }
 
 .bottom-main-panel {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     position: relative;
-    margin: 0.5%;
+    margin-top: 10%;
     width: 48.5%;
     padding: 1%; 
     border-style: solid;
