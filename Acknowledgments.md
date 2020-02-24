@@ -15,6 +15,12 @@ Acknowledgments:
   Fonts:
   VCU: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif
 
+  Progress Bar:
+  http://www.cssflow.com
+  Licensed under the MIT License
+  Sass/SCSS source: https://goo.gl/UhXKg
+  PSD by Vin Thomas: https://goo.gl/n1M2e
+
   Color Palette:
   - VCU Colors:
       Gold (Hex: #FFBA00)
