@@ -8,8 +8,8 @@ const allObj = [{
                 }, 
                 {
                     name: 's2', 
-                    diff: 'Hard', 
-                    clue: "Hidden park near William Fox Elementary.",
+                    diff: 'Extra Hard', 
+                    clue: "Old location that sells booze to minors!",
                     img: '/spot2.jpg'
                 },
                 {
@@ -84,7 +84,7 @@ $('#enter-answer').on('click', () => {
         $('#isCorrect').text('Great job!');
     }
 
-    else if(chosenObj === 's2' && answer === 'scuffletown park'){
+    else if(chosenObj === 's2' && (answer === 'clay express market' || answer === 'clay market' || answer === 'clay street market')){
         $('#isCorrect').text('Correct!');
     }
 
