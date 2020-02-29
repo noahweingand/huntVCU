@@ -2,7 +2,6 @@
 <html>
     {{>header}}
     <body>
-
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="#"><strong>SCAM RAMZ</strong></a>
             <button id="show3" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Game Settings</strong></button>
@@ -32,55 +31,50 @@
             </form>
         </div>
     
-        <div id="main-application">
-
-            <div class="main-panel" id="top-left-panel">
-                <h1><strong>Current Location</strong></h1>
-                <div id='map' style='width: 100%; height: 500px;'></div>
-                <div class="input-group">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <button id="enter-answer" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-secondary" type="button"><strong>Enter Answer</strong></button>
+        <div class = "row main-panel">
+            <div class="col-md-6 top-left">
+                <div id="top-left-panel">
+                    <h1><strong>Current Location</strong></h1>
+                    <div id='map' style='width: 100%; height: 500px;'></div>
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button id="enter-answer" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-secondary" type="button"><strong>Enter Answer</strong></button>
+                            </div>
+                            <input id="answer-box" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
                         </div>
-                        <input id="answer-box" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
                     </div>
                 </div>
             </div>
 
-            <div class="main-panel" id="top-right-panel">
-                <h1 id="top-right-text"><strong>Clue images/maps pop up here</strong></h1>
-                <div><img src="/Logos.png" style='width: 436px; height: 500px' id="mapclue"></div>
-                <div class="input-group">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend"></div>
-                        <div></div>
+            <div class="col-md-6 top-right">
+                <div>
+                    <h1 id="top-right-text"><strong>Clue images/maps pop up here</strong></h1>
+                    <div><img src="/Logos.png" style='width: 436px; height: 500px' id="mapclue"></div>
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"></div>
+                            <div></div>
+                        </div>
                     </div>
-                </div>
-                <div id="clue"><strong>Clues pop up here</strong></div>
-                <div class="container"><text><strong>Current Progress</strong></text>
-                    <input type="radio" class="radio" name="progress" value="one" id="one" checked>
-                    <input type="radio" class="radio" name="progress" value="ten" id="ten">
-                    <input type="radio" class="radio" name="progress" value="twenty" id="twenty">
-                    <input type="radio" class="radio" name="progress" value="thirty" id="thirty">
-                    <input type="radio" class="radio" name="progress" value="forty" id="forty">
-                    <input type="radio" class="radio" name="progress" value="fifty" id="fifty">
-                    <input type="radio" class="radio" name="progress" value="sixty" id="sixty">
-                    <input type="radio" class="radio" name="progress" value="seventy" id="seventy">
-                    <input type="radio" class="radio" name="progress" value="eighty" id="eighty">
-                    <input type="radio" class="radio" name="progress" value="ninety" id="ninety">
-                    <input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
-
-                    <div class="progress">
-                        <div class="progress-bar" id="progress-bar"><text id="progress-bar-text">1%</text></div>
-                    </div>
+                    <div id="clue"><strong>Clues pop up here</strong></div>
                 </div>
             </div>
-
         </div>
 
-        <div id="main-application-extension">
-
-            <div class="bottom-main-panel" id="bottom-left-panel">
+        <div class="row pb">
+            <div class="col-sm-12 cp">
+                <text id="cp-text"><strong>Current Progress</strong></text>
+            </div>
+            <div class="col-sm-12 pb">
+                <div class="progress">
+                    <div class="progress-bar" id="progress-bar"><text id="progress-bar-text">0%</text></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row second-panel">
+            <div class="col-md-6 bottom-left">
                 <div class="panel panel-primary" id="result_panel">
                     <div class="panel-heading"><h1 class="panel-title"><strong>Objectives</strong></h1></div>
                     <h2 id = "info">Click a spot to reveal a clue!</h2>
@@ -100,6 +94,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-md-6 bottom-right">
             </div>
         </div>
 
@@ -172,6 +169,5 @@
             })
         </script>
         <script src="/js/objtracker.js"></script>
-        <script type="text/javascript" src="//branding.vcu.edu/bar/academic/latest.js" data-color-top-campaign="gold"></script>
     </body>
 </html>

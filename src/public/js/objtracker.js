@@ -1,4 +1,5 @@
 var chosenObj = undefined; // for the chosen objective on the page. 
+var check = 0; // Check to set progress bar
 
 // Checks used to make sure each correct answer is only counted once
 var check1 = 0;
@@ -11,7 +12,6 @@ var check7 = 0;
 var check8 = 0;
 var check9 = 0;
 var check10 = 0;
-
 
 const allObj = [{ 
                     name: 's1', 
@@ -78,7 +78,11 @@ const allObj = [{
 $.each(allObj, function(i, v) {
     (function (v) {
         $("#" + v.name).click(() => {
-            $('.container').css('display', 'inline-block');
+            if(check < 1){
+                let currentProgress = $('#progress-bar').text();
+                checkProgress(currentProgress);
+                check = check + 1;
+            }
             chosenObj = v.name;
             if(chosenObj !== undefined){
                 $('#top-right-text').text('Image Clue:'); 
@@ -189,52 +193,69 @@ $('#enter-answer').on('click', () => {
     }
 });
 
-function checkProgress(percentage){
+function checkProgress(percentage) {
 
-    if(percentage === '1%'){
-        $('#ten').click();
+    if(percentage === '0%'){
+        $('.progress-bar').css('width', '1%');
+        $('.progress-bar').css('background-color', '#FF0000');
+        $('#progress-bar-text').text('1%');
+    }
+    else if(percentage === '1%'){
+        $('.progress-bar').css('width', '10%');
+        $('.progress-bar').css('background-color', '#FF3300');
         $('#progress-bar-text').text('10%');       
     }
     else if(percentage === '10%'){
         $('#twenty').click();
+        $('.progress-bar').css('width', '20%');
+        $('.progress-bar').css('background-color', '#FF6600');
         $('#progress-bar-text').text('20%');     
     }
     else if(percentage === '20%'){
-        $('#thirty').click();
+        $('.progress-bar').css('width', '30%');
+        $('.progress-bar').css('background-color', '#FF9900');
         $('#progress-bar-text').text('30%');     
     }
     else if(percentage === '30%'){
-        $('#forty').click();
+        $('.progress-bar').css('width', '40%');
+        $('.progress-bar').css('background-color', '#FFCC00');
         $('#progress-bar-text').text('40%');  
     }
     else if(percentage === '40%'){
-        $('#fifty').click();
+        $('.progress-bar').css('width', '50%');
+        $('.progress-bar').css('background-color', '#FFFF00');
         $('#progress-bar-text').text('50%');     
     }
     else if(percentage === '50%'){
-        $('#sixty').click();
+        $('.progress-bar').css('width', '60%');
+        $('.progress-bar').css('background-color', '#CCFF00');
         $('#progress-bar-text').text('60%');     
     }
     else if(percentage === '60%'){
-        $('#seventy').click();
+        $('.progress-bar').css('width', '70%');
+        $('.progress-bar').css('background-color', '#99FF00');
         $('#progress-bar-text').text('70%');     
     }
     else if(percentage === '70%'){
-        $('#eighty').click();
+        $('.progress-bar').css('width', '80%');
+        $('.progress-bar').css('background-color', '#66FF00');
         $('#progress-bar-text').text('80%');     
     }
     else if(percentage === '80%'){
-        $('#ninety').click();
+        $('.progress-bar').css('width', '90%');
+        $('.progress-bar').css('background-color', '#33FF00');
         $('#progress-bar-text').text('90%');     
     }
     else if(percentage === '90%'){
-        $('#onehundred').click();
-        $('#progress-bar-text').text('100%').color('#000000');     
+        $('.progress-bar').css('width', '100%');
+        $('.progress-bar').css('background-color', '#00FF00');
+        $('#progress-bar-text').text('100%');     
     }
     else if(percentage === '100%'){
         ;    
     }
     else{
-        $('#progress-bar').text('ERROR');
+        $('.progress-bar').css('width', '0%');
+        $('#progress-bar-text').text('ERROR!');
     }
 }

@@ -1,12 +1,111 @@
-#main-application, #main-application-extension { 
+/* Navigation Bar */
+.navbar {
+    background-color: #000000;
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-shadow: 
+    -1px -1px 0 #F5F5F5,
+    1px -1px 0 #F5F5F5,
+    -1px 1px 0 #F5F5F5,
+    1px 1px 0 #F5F5F5; 
+}
+
+/* Main Panel */
+.row.main-panel {
+    border-style: solid;
+    border-color: #FFBA00;
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1%;
+    position: relative; 
     text-align: center;
-    display: table; 
-    width: 100%;
-    background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 750px) {
+    .row.main-panel {
+        border-style: none;
+        padding: 0%;
+    }
+    .col-md-6.top-left {
+        display: block;
+        border-style: solid;
+        border-color: #FFBA00;
+    }
+    .col-md-6.top-right {
+        display: block;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-color: #FFBA00;
+    }
+}
+
+/* Progress Bar */
+.row.pb {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: #FFBA00;
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1%;
+    position: relative; 
+    text-align: center;
+}
+
+.col-sm-12.cp, .col-sm-12.pb {
+    display: block;
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    height: auto;
+    padding: 1%;
+    position: relative; 
+    text-align: center;
+}
+
+.progress {
+    margin: auto;
+    width: 500px;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+  
+.progress-bar {
+    background-color: #FF0000;
+    height: auto;
+    width: 0%;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Objectives */
+.row.second-panel {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: #FFBA00;
+    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1%;
+    position: relative; 
+    text-align: center;
 }
 
 #enter-answer {
@@ -45,10 +144,6 @@
     height: 92%;
 }
 
-#mapclue {
-    margin:auto; 
-}
-
 .top-button {
     font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
     color: #000000;
@@ -72,146 +167,6 @@
     */
     color: #FFBA00;
     
-}
-
-.navbar {
-    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    background-color: #000000;
-    text-shadow: 
-    -1px -1px 0 #F5F5F5,
-    1px -1px 0 #F5F5F5,
-    -1px 1px 0 #F5F5F5,
-    1px 1px 0 #F5F5F5; 
-    margin-bottom: 30px;
-}
-
-.main-panel {
-    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    position: relative;
-    margin-left: 100%;
-    width: 50%;
-    padding: 1%; 
-    border-style: solid;
-    border-color: #FFBA00; 
-
-    display: table-cell;
-}
-
-.bottom-main-panel {
-    font-family: "Roboto", Arial, "Helvetica Neue", "Lucida Grande", Helvetica, sans-serif;
-    position: relative;
-    margin-top: 10%;
-    width: 48.5%;
-    padding: 1%; 
-    border-style: solid;
-    border-color: #FFBA00; 
-    display: table-cell;
-    overflow:hidden;
-    vertical-align:top;
-}
-
-#main-application:after {
-    display:inline-block;
-    width:100%;
-    content:'';
-}
-
-.container {
-    display: none;
-    margin: 10px auto;
-    width: 400px;
-    text-align: center;
-}
-  
-.container .progress {
-    margin: 0 auto;
-    width: 400px;
-}
-  
-.progress {
-    padding: 4px;
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-}
-  
-.progress-bar {
-    height: auto;
-    border-radius: 4px;
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-    -webkit-transition: 0.4s linear;
-    -moz-transition: 0.4s linear;
-    -o-transition: 0.4s linear;
-    transition: 0.4s linear;
-    -webkit-transition-property: width, background-color;
-    -moz-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color;
-    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-}
-  
-#one:checked ~ .progress > .progress-bar {
-    width: 1%;
-    background-color: #FF0000;
-}
-
-#ten:checked ~ .progress > .progress-bar {
-    width: 10%;
-    background-color: #FF3300;
-}
-
-#twenty:checked ~ .progress > .progress-bar {
-    width: 20%;
-    background-color: #FF6600;
-}
-
-#thirty:checked ~ .progress > .progress-bar {
-    width: 30%;
-    background-color: #FF9900;
-}
-
-#forty:checked ~ .progress > .progress-bar {
-    width: 40%;
-    background-color: #FFCC00;
-}
-
-#fifty:checked ~ .progress > .progress-bar {
-    width: 50%;
-    background-color: #FFFF00;
-}
-
-#sixty:checked ~ .progress > .progress-bar {
-    width: 60%;
-    background-color: #CCFF00;
-}
-
-#seventy:checked ~ .progress > .progress-bar {
-    width: 70%;
-    background-color: #99FF00;
-}
-
-#eighty:checked ~ .progress > .progress-bar {
-    width: 80%;
-    background-color: #66FF00;
-}
-
-#ninety:checked ~ .progress > .progress-bar {
-    width: 90%;
-    background-color: #33FF00;
-}
-
-#onehundred:checked ~ .progress > .progress-bar {
-    width: 100%;
-    background-color: #00FF00;
-}
-
-.radio {
-    display: none;
 }
 
 #progress-bar-text {
