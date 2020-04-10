@@ -2,10 +2,12 @@
 Final project for CMSC 491 - User Interface Design
 # Installation
 Download Node.js and npm.
-To run the server:
+To setup and then run the server:
 ```bash
+npm install
 npm start
 ```
+
 Navigate to your localhost with the port number it provides you to view.
 
 
