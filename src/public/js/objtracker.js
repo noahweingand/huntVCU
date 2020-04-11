@@ -34,7 +34,7 @@ const allObj = [{
                 {
                     name: 's4', 
                     diff: 'Medium', 
-                    clue: "Two dollar pizza with intoxicated people!",
+                    clue: "Local two dollar pizza restaurant on campus!",
                     img: '/spot4.jpg'
                 },
                 {
@@ -189,7 +189,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's3' && answer === 'hollywood cemetery'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Good job!');
         if(check3 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -198,7 +198,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's4' && (answer === 'christian\'s pizza' || answer === 'christians pizza')){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('That is right!');
         if(check4 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -207,7 +207,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's5' && answer === 'cabell library'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Woohoo!');
         if(check5 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -225,7 +225,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's7' && answer === 'siegel center'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Good job!');
         if(check7 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -234,7 +234,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's8' && (answer === 'ica' || answer === 'institute of contemporary art')){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Great job!');
         if(check8 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -243,7 +243,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's9' && answer === 'police station'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Yep!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -252,7 +252,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's10' && (answer === 'cary st gym' || answer === 'cary st. gym' || answer === 'cary street gym')){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('That is right!');
         if(check10 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -270,7 +270,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's12' && answer === 'johnson' || answer === 'johnson hall'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Good job!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -279,7 +279,7 @@ $('#enter-answer').on('click', () => {
     }
     
     else if(chosenObj === 's13' && answer === 'depot' || answer === 'the depot'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('A+ !!!!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -288,7 +288,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's14' && answer === 'pollak' || answer === 'pollak building'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Nice job!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -306,7 +306,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's16' && answer === 'hibbs' || answer === 'hibbs hall' || answer === 'hibbs building'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Yup!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -315,7 +315,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's17' && answer === 'brandt' || answer === 'brandt hall'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Good job!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -324,7 +324,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's18' && answer === 'commons' || answer === 'the commons'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Awesome!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -334,7 +334,7 @@ $('#enter-answer').on('click', () => {
 
     else if(chosenObj === 's19' && answer === 'the fab' || answer === 'fab' || answer === 'the fine arts building'
             || answer === 'fine arts building' || answer === 'the fine art building' ){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Wow, you are good at this!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -344,7 +344,7 @@ $('#enter-answer').on('click', () => {
 
     else if(chosenObj === 's20' && answer === 'engineering east' || answer === 'engineering building east'
             || answer === 'snead' || answer === 'east engineering' || answer === 'east engineering hall' || answer === 'east hall' ){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Yep!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -353,7 +353,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's21' && answer === 'shafer playhouse' || answer === 'the shafer playhouse'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('Correct! One more left!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
@@ -362,7 +362,7 @@ $('#enter-answer').on('click', () => {
     }
 
     else if(chosenObj === 's22' && answer === 'grc' || answer === 'gladding residence center' || answer === 'the gladding residence center'){
-        $('#isCorrect').text('Correct!');
+        $('#isCorrect').text('That was the last one! You are a pro!');
         if(check9 < 1){
             let currentProgress = $('#progress-bar').text();
             checkProgress(currentProgress);
