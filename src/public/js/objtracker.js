@@ -259,7 +259,117 @@ $('#enter-answer').on('click', () => {
             check10 = check10 + 1;
         }
     }
+
+    else if(chosenObj === 's11' && answer === 'compass' || answer === 'the compass'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's12' && answer === 'johnson' || answer === 'johnson hall'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
     
+    else if(chosenObj === 's13' && answer === 'depot' || answer === 'the depot'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's14' && answer === 'pollak' || answer === 'pollak building'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+    
+    else if(chosenObj === 's15' && answer === 'shafer' || answer === 'shafer dining hall'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's16' && answer === 'hibbs' || answer === 'hibbs hall' || answer === 'hibbs building'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's17' && answer === 'brandt' || answer === 'brandt hall'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's18' && answer === 'commons' || answer === 'the commons'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's19' && answer === 'the fab' || answer === 'fab' || answer === 'the fine arts building'
+            || answer === 'fine arts building' || answer === 'the fine art building' ){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's20' && answer === 'engineering east' || answer === 'engineering building east'
+            || answer === 'snead' || answer === 'east engineering' || answer === 'east engineering hall' || answer === 'east hall' ){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's21' && answer === 'shafer playhouse' || answer === 'the shafer playhouse'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
+    else if(chosenObj === 's22' && answer === 'grc' || answer === 'gladding residence center' || answer === 'the gladding residence center'){
+        $('#isCorrect').text('Correct!');
+        if(check9 < 1){
+            let currentProgress = $('#progress-bar').text();
+            checkProgress(currentProgress);
+            //check9 = check9 + 1;
+        }
+    }
+
     else{
         $('#isCorrect').text('Nope, not quite!');
     }
