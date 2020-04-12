@@ -158,7 +158,8 @@
     color: #FFFFFF;
     border-color: #000000;
     background: #000000;
-    margin:auto; 
+    /* margin:auto; */
+    margin-right: 0px;
 }
 
 .top-button:hover{
@@ -174,7 +175,7 @@
 }
 
 .list-group{
-    max-height: 300px;
+    max-height: 130px; /* 185px then it was 450 w/o map */
     margin-bottom: 10px;
     overflow-y:scroll;
     -webkit-overflow-scrolling: touch;
@@ -188,5 +189,5 @@
 }
 
 .hideform {
-    display: none;
+    display: none; 
 }

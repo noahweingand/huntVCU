@@ -27,11 +27,11 @@ const allObj = [
   {
     name: "s2",
     diff: "Extra Hard",
-    clue: "Old location that sells booze to minors!",
+    clue: "VCU's brand new engineering building!",
     img: "/spot2.jpg",
     latitude: 37.550259,
     longitude: -77.447446,
-    answers: ["clay express market", "clay market", "clay street market"]
+    answers: ["engineering research building", "research building", "erb"]
   },
   {
     name: "s3",

@@ -3,9 +3,9 @@
     {{>header}}
     <body>
         <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#"><strong>SCAM RAMZ</strong></a>
-            <button id="show3" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Game Settings</strong></button>
-            <button id="show" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Profile Settings</strong></button>
+            <a class="navbar-brand" href="#"><strong>HUNT VCU</strong></a>
+            {{!-- <button id="show3" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Game Settings</strong></button>
+            <button id="show" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Profile Settings</strong></button> --}}
             <button id="show2" class="navebar-toggler top-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><strong>Help</strong></button>
         </nav>
 
@@ -33,7 +33,7 @@
     
         <div class = "row main-panel">
             <div class="col-md-6 top-left">
-                <div id="top-left-panel">
+                {{!-- <div id="top-left-panel">
                     <h1><strong>Current Location</strong></h1>
                     <div id='map' style='width: 100%; height: 500px;'></div>
                     <div class="input-group">
@@ -44,13 +44,11 @@
                             <input id="answer-box" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> --}}
 
-            <div class="col-md-6 top-right">
                 <div>
                     <h1 id="top-right-text"><strong>Clue images/maps pop up here</strong></h1>
-                    <div><img src="/Logos.png" style='width: 436px; height: 500px' id="mapclue"></div>
+                    <div><img src="/Logos.png" style='width: 436px; height: 530px' id="mapclue"></div>
                     <div class="input-group">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend"></div>
@@ -60,25 +58,41 @@
                     <div id="clue"><strong>Clues pop up here</strong></div>
                 </div>
             </div>
-        </div>
 
-        <div class="row pb">
-            <div class="col-sm-12 cp">
-                <text id="cp-text"><strong>Current Progress</strong></text>
-            </div>
-            <div class="col-sm-12 pb">
-                <div class="progress">
-                    <div class="progress-bar" id="progress-bar"><text id="progress-bar-text">0%</text></div>
+            <div class="col-md-6 top-right">
+                {{!-- <div>
+                    <h1 id="top-right-text"><strong>Clue images/maps pop up here</strong></h1>
+                    <div><img src="/Logos.png" style='width: 436px; height: 500px' id="mapclue"></div>
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="clue"><strong>Clues pop up here</strong></div>
+                </div> --}}
+
+                {{!-- <div id="top-left-panel">
+                    <h1><strong>Current Location</strong></h1>
+                    <div id='map' style='width: 100%; height: 500px;'></div>
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button id="enter-answer" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-secondary" type="button"><strong>Enter Answer</strong></button>
+                            </div>
+                            <input id="answer-box" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div> --}}
+                <div id="top-left-panel">
+                    <h1><strong>Current Location</strong></h1>
+                    <div id='map' style='width: 100%; height: 290px;'></div>
+                    
                 </div>
-            </div>
-        </div>
-        
-        <div class="row second-panel">
-            <div class="col-md-6 bottom-left">
                 <div class="panel panel-primary" id="result_panel">
                     <div class="panel-heading"><h1 class="panel-title"><strong>Objectives</strong></h1></div>
                     <h2 id = "info">Click a spot to reveal a clue!</h2>
-                    <div>If you think you know where the spot is, type it above.</div>
+                    <div>If you think you know where the spot is, type it below.</div>
                     <div class="panel-body">
                         <ul class="list-group">
                             <li id="s1" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 1</strong></button></li>
@@ -105,7 +119,32 @@
                             <li id="s22" class="list-group-item"><button class="btn obj-btn btn-block"><strong>Spot 22</strong></button></li>
                         </ul>
                     </div>
+                    <div class="input-group">
+                        <div class="input-group mb-3">
+                            <input id="answer-box" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                            <div class="input-group-prepend">
+                                <button id="enter-answer" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-secondary" type="button"><strong>Enter Answer</strong></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row pb">
+            <div class="col-sm-12 cp">
+                <text id="cp-text"><strong>Current Progress</strong></text>
+            </div>
+            <div class="col-sm-12 pb">
+                <div class="progress">
+                    <div class="progress-bar" id="progress-bar"><text id="progress-bar-text">0%</text></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row second-panel">
+            <div class="col-md-6 bottom-left">
+                
             </div>
 
             <div class="col-md-6 bottom-right">
