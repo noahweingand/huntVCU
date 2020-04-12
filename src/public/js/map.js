@@ -17,8 +17,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhdXJlYSIsImEiOiJjazZpYW9jdXYzMzhoM2VxZjkwe
             //     })
             // );
 
-            /* Used to center the map on VCU
-
+          
+            /*
             map.on('mousemove', function(e) {
                 document.getElementById('info').innerHTML =
                 // e.point is the x, y coordinates of the mousemove event relative
@@ -29,8 +29,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhdXJlYSIsImEiOiJjazZpYW9jdXYzMzhoM2VxZjkwe
                 JSON.stringify(e.lngLat.wrap());
             });
             */
-
-           var radius = 0.003; 
+        
+           var radius = 0.00175; 
  
            function pointOnCircle(angle, long, lat) {
            return {

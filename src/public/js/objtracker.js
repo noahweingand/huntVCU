@@ -18,72 +18,72 @@ const allObj = [{
                     diff: 'Hard', 
                     clue: "VCUart's theatre where you can catch their latest mainstage production (Be sure to check out their next production coming this April: Spring Awakening).",
                     img: '/spot1.png', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.548534, 
+                    longitude: -77.455252
                 }, 
                 {
                     name: 's2', 
                     diff: 'Extra Hard', 
                     clue: "Old location that sells booze to minors!",
                     img: '/spot2.jpg',
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.550259, 
+                    longitude: -77.447446
                 },
                 {
                     name: 's3', 
                     diff: 'Extra Hard', 
                     clue: "Richmond Vampire lives here.",
                     img: '/spot3.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.539598,  
+                    longitude: -77.454290,
                 },
                 {
                     name: 's4', 
                     diff: 'Medium', 
                     clue: "Two dollar pizza with drunk people!",
                     img: '/spot4.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.550554, 
+                    longitude: -77.453552
                 },
                 {
                     name: 's5', 
                     diff: 'Easy', 
                     clue: "A place to study with a lingering case of the bed bugs...",
                     img: '/spot5.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.547816,
+                    longitude: -77.453203
                 },
                 {
                     name: 's6', 
                     diff: 'Easy', 
                     clue: "Where one would see popular plays, stand up, performers, and homecoming concerts on campus...",
                     img: '/spot6.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.546522,
+                    longitude: -77.451561
                 },
                 {
                     name: 's7', 
                     diff: 'Easy', 
                     clue: "Where one will attend ceremonies and graduation...IF you pass your classes...",
                     img: '/spot7.jpeg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.5525497, 
+                    longitude: -77.4553268
                 },
                 {
                     name: 's8', 
                     diff: 'Easy', 
                     clue: "Relatively new museum on campus where you can see all mediums of art",
                     img: '/spot8.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.548903, 
+                    longitude: -77.448580
                 },
                 {
                     name: 's9', 
                     diff: 'Medium', 
                     clue: "Home of VCU's executive overseers who patrol campus",
                     img: '/spot9.jpg', 
-                    latitude: 0, 
-                    longitude: 0
+                    latitude: 37.544281, 
+                    longitude: -77.4414988
                 },
                 {
                     name: 's10', 
@@ -113,7 +113,7 @@ $.each(allObj, function(i, v) {
           $('#mapclue').attr("src", v.img).width("100%"); 
           longitude = v.longitude; 
           latitude = v.latitude; 
-          map.flyTo({center: [longitude, latitude], zoom: 14})
+          map.flyTo({center: [longitude, latitude], zoom: 15.5})
         }); 
     })(v);  
 });
