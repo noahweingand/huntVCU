@@ -175,7 +175,7 @@
 }
 
 .list-group{
-    max-height: 450px; /* 185px */
+    max-height: 130px; /* 185px then it was 450 w/o map */
     margin-bottom: 10px;
     overflow-y:scroll;
     -webkit-overflow-scrolling: touch;
