@@ -58,7 +58,7 @@ const allObj = [
     img: "/spot5.jpg",
     latitude: 37.547816,
     longitude: -77.453203,
-    answers: ["cabell library"]
+    answers: ["cabell library", "cabell"]
   },
   {
     name: "s6",
@@ -112,73 +112,109 @@ const allObj = [
     name: 's11',
     diff: 'Easy',
     clue: "The center of campus where you can find club events and protesters",
-    img: '/spot11.jpg'
+    img: '/spot11.jpg',
+    latitude: 37.548534,
+    longitude: -77.455252,
+    answers: ["compass", "the compass"]
   },
   {
-      name: 's12',
-      diff: 'Easy',
-      clue: "The dorm which has the 'art colony' on the first four floors",
-      img: '/spot12.jpg'
+    name: 's12',
+    diff: 'Easy',
+    clue: "The dorm which has the 'art colony' on the first four floors",
+    img: '/spot12.jpg',
+    latitude: 37.548534,
+    longitude: -77.455252,
+    answers: ["johnson", "johnson hall"]
   },
   {
-      name: 's13',
-      diff: 'Hard',
-      clue: "The art building where art majors can find the infinity wall/room",
-      img: '/spot13.jpg'
+    name: 's13',
+    diff: 'Hard',
+    clue: "The art building where art majors can find the infinity wall/room",
+    img: '/spot13.jpg',
+    latitude: 37.548534,
+    longitude: -77.455252,
+    answers: ["depot", "the depot"]
   },
   {
       name: 's14',
       diff: 'Medium',
       clue: "The oldest art building at VCU, home to photography majors!",
-      img: '/spot14.jpg'
+      img: '/spot14.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["pollak", "pollak building"]
   },
   {
       name: 's15',
       diff: 'Easy',
       clue: "VCU's main dining hall. You either love it or hate it...",
-      img: '/spot15.jpg'
+      img: '/spot15.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["shafer", "shafer dining", "shafer dining hall"]
   },
   {
       name: 's16',
       diff: 'Easy',
       clue: "Where many classes are held and the building even has a basement",
-      img: '/spot16.jpg'
+      img: '/spot16.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["hibbs", "hibbs hall", "hibbs building"]
   },
   {
       name: 's17',
       diff: 'Medium',
       clue: "The dorm that used to be a hospital 😱",
-      img: '/spot17.jpg'
+      img: '/spot17.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["brandt", "brandt hall"]
   },
   {
       name: 's18',
       diff: 'Easy',
       clue: "A campus building where you can find food, ballrooms, video games, and an auditorium",
-      img: '/spot18.jpg'
+      img: '/spot18.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["commons", "the commons"]
   },
   {
       name: 's19',
       diff: 'Medium',
       clue: "An art building that's a home to sculpting and craft",
-      img: '/spot19.jpg'
+      img: '/spot19.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["the fab", "fab", "the fine arts building", "fine arts building", "the fine art building", "fine art building"]
   },
   {
       name: 's20',
       diff: 'Medium',
       clue: "Engineering building where you can find Computer Science on the 4th floor",
-      img: '/spot20.png'
+      img: '/spot20.png',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["engineering east", "engineering building east", "snead", "snead hall", "east engineering", "east engineering hall", "east hall"]
   },
   {
       name: 's21',
       diff: 'Hard',
       clue: "A place near the compass where you can catch the 'No Shame' Talent Show",
-      img: '/spot21.jpg'
+      img: '/spot21.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["shafer playhouse", "the shafer playhouse"]
   },
   {
       name: 's22',
       diff: "Easy",
       clue: "VCU's newest dorm",
-      img: '/spot22.jpg'
+      img: '/spot22.jpg',
+      latitude: 37.548534,
+      longitude: -77.455252,
+      answers: ["grc", "the gladding residence center", "gladding residence center"]
   }
 ];
 
@@ -215,7 +251,7 @@ $("#enter-answer").on("click", () => {
   let obj = allObj[index]; 
 
   for(answer of obj.answers){
-      if(answer.toLowerCase() === input_answer.toLowerCase()){
+    if(answer.toLowerCase() === input_answer.toLowerCase()){
         $("#isCorrect").text("Correct!");
         element.parentElement.removeChild(element);
         let currentProgress = $("#progress-bar").text();
