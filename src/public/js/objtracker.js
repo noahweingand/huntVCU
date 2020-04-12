@@ -134,6 +134,7 @@ $.each(allObj, function (i, v) {
   })(v);
 });
 
+// method for comparing answers
 $("#enter-answer").on("click", () => {
   let input_answer = $("#answer-box").val().toLowerCase();
   let element = document.querySelector('#'+chosenObj); 
@@ -142,7 +143,7 @@ $("#enter-answer").on("click", () => {
   let obj = allObj[index]; 
 
   for(answer of obj.answers){
-      if(answer === input_answer.toLowerCase()){
+      if(answer.toLowerCase() === input_answer.toLowerCase()){
         $("#isCorrect").text("Correct!");
         element.parentElement.removeChild(element);
         let currentProgress = $("#progress-bar").text();
