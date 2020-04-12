@@ -29,8 +29,8 @@ const allObj = [
     diff: "Extra Hard",
     clue: "VCU's brand new engineering building!",
     img: "/spot2.jpg",
-    latitude: 37.550259,
-    longitude: -77.447446,
+    latitude: 37.544570,
+    longitude: -77.448697,
     answers: ["engineering research building", "research building", "erb"]
   },
   {
@@ -113,8 +113,8 @@ const allObj = [
     diff: 'Easy',
     clue: "The center of campus where you can find club events and protesters",
     img: '/spot11.jpg',
-    latitude: 37.548534,
-    longitude: -77.455252,
+    latitude: 37.548160,
+    longitude: -77.453216,
     answers: ["compass", "the compass"]
   },
   {
@@ -122,8 +122,8 @@ const allObj = [
     diff: 'Easy',
     clue: "The dorm which has the 'art colony' on the first four floors",
     img: '/spot12.jpg',
-    latitude: 37.548534,
-    longitude: -77.455252,
+    latitude: 37.547946,
+    longitude: -77.451097,
     answers: ["johnson", "johnson hall"]
   },
   {
@@ -131,8 +131,8 @@ const allObj = [
     diff: 'Hard',
     clue: "The art building where art majors can find the infinity wall/room",
     img: '/spot13.jpg',
-    latitude: 37.548534,
-    longitude: -77.455252,
+    latitude: 37.550310,
+    longitude: -77.448855,
     answers: ["depot", "the depot"]
   },
   {
@@ -140,8 +140,8 @@ const allObj = [
       diff: 'Medium',
       clue: "The oldest art building at VCU, home to photography majors!",
       img: '/spot14.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.549640,
+      longitude: -77.454407,
       answers: ["pollak", "pollak building"]
   },
   {
@@ -149,17 +149,17 @@ const allObj = [
       diff: 'Easy',
       clue: "VCU's main dining hall. You either love it or hate it...",
       img: '/spot15.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
-      answers: ["shafer", "shafer dining", "shafer dining hall"]
+      latitude: 37.548361,
+      longitude: -77.452407,
+      answers: ["shafer", "shafer dining", "shafer dining hall", "shafer court", "shafer court dining", "shafer court dining center"]
   },
   {
       name: 's16',
       diff: 'Easy',
       clue: "Where many classes are held and the building even has a basement",
       img: '/spot16.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.548661,
+      longitude: -77.453340,
       answers: ["hibbs", "hibbs hall", "hibbs building"]
   },
   {
@@ -167,8 +167,8 @@ const allObj = [
       diff: 'Medium',
       clue: "The dorm that used to be a hospital 😱",
       img: '/spot17.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.548588,
+      longitude: -77.450277,
       answers: ["brandt", "brandt hall"]
   },
   {
@@ -176,17 +176,17 @@ const allObj = [
       diff: 'Easy',
       clue: "A campus building where you can find food, ballrooms, video games, and an auditorium",
       img: '/spot18.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
-      answers: ["commons", "the commons"]
+      latitude: 37.547710,
+      longitude: -77.454359,
+      answers: ["commons", "the commons", "academic learning commons"]
   },
   {
       name: 's19',
       diff: 'Medium',
       clue: "An art building that's a home to sculpting and craft",
       img: '/spot19.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.551149,
+      longitude: -77.450036,
       answers: ["the fab", "fab", "the fine arts building", "fine arts building", "the fine art building", "fine art building"]
   },
   {
@@ -194,8 +194,8 @@ const allObj = [
       diff: 'Medium',
       clue: "Engineering building where you can find Computer Science on the 4th floor",
       img: '/spot20.png',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.545637,
+      longitude: -77.448687,
       answers: ["engineering east", "engineering building east", "snead", "snead hall", "east engineering", "east engineering hall", "east hall"]
   },
   {
@@ -203,8 +203,8 @@ const allObj = [
       diff: 'Hard',
       clue: "A place near the compass where you can catch the 'No Shame' Talent Show",
       img: '/spot21.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.548683,
+      longitude: -77.452483,
       answers: ["shafer playhouse", "the shafer playhouse"]
   },
   {
@@ -212,8 +212,8 @@ const allObj = [
       diff: "Easy",
       clue: "VCU's newest dorm",
       img: '/spot22.jpg',
-      latitude: 37.548534,
-      longitude: -77.455252,
+      latitude: 37.545805,
+      longitude: -77.450962,
       answers: ["grc", "the gladding residence center", "gladding residence center"]
   }
 ];
