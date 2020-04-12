@@ -16,16 +16,6 @@ var check10 = 0;
 const allObj = [
   {
     name: "s1",
-    diff: "Hard",
-    clue:
-      "VCUart's theatre where you can catch their latest mainstage production (Be sure to check out their next production coming this April: Spring Awakening).",
-    img: "/spot1.png",
-    latitude: 37.548534,
-    longitude: -77.455252,
-    answers: ["raymond hodges theatre"]
-  },
-  {
-    name: "s2",
     diff: "Extra Hard",
     clue: "VCU's brand new engineering building!",
     img: "/spot2.jpg",
@@ -34,7 +24,7 @@ const allObj = [
     answers: ["engineering research building", "research building", "erb"]
   },
   {
-    name: "s3",
+    name: "s2",
     diff: "Extra Hard",
     clue: "Richmond Vampire lives here.",
     img: "/spot3.jpg",
@@ -43,7 +33,7 @@ const allObj = [
     answers: ["hollywood cemetary"]
   },
   {
-    name: "s4",
+    name: "s3",
     diff: "Medium",
     clue: "Two dollar pizza with drunk people!",
     img: "/spot4.jpg",
@@ -52,7 +42,7 @@ const allObj = [
     answers: ["christian's pizza", "christians pizza"]
   },
   {
-    name: "s5",
+    name: "s4",
     diff: "Easy",
     clue: "A place to study with a lingering case of the bed bugs...",
     img: "/spot5.jpg",
@@ -61,7 +51,7 @@ const allObj = [
     answers: ["cabell library", "cabell"]
   },
   {
-    name: "s6",
+    name: "s5",
     diff: "Easy",
     clue:
       "Where one would see popular plays, stand up, performers, and homecoming concerts on campus...",
@@ -71,7 +61,7 @@ const allObj = [
     answers: ["altria theater"]
   },
   {
-    name: "s7",
+    name: "s6",
     diff: "Easy",
     clue:
       "Where one will attend ceremonies and graduation...IF you pass your classes...",
@@ -81,7 +71,7 @@ const allObj = [
     answers: ["siegel center"]
   },
   {
-    name: "s8",
+    name: "s7",
     diff: "Easy",
     clue:
       "Relatively new museum on campus where you can see all mediums of art",
@@ -91,7 +81,7 @@ const allObj = [
     answers: ["institute of contemporary art"]
   },
   {
-    name: "s9",
+    name: "s8",
     diff: "Medium",
     clue: "Home of VCU's executive overseers who patrol campus",
     img: "/spot9.jpg",
@@ -100,7 +90,7 @@ const allObj = [
     answers: ["police station"]
   },
   {
-    name: "s10",
+    name: "s9",
     diff: "Easy",
     clue: "Crowded exercising on campus",
     img: "/spot10.jpg",
@@ -109,7 +99,7 @@ const allObj = [
     answers: ["cary st gym", "cary st. gym", "cary street gym"]
   },
   {
-    name: 's11',
+    name: 's10',
     diff: 'Easy',
     clue: "The center of campus where you can find club events and protesters",
     img: '/spot11.jpg',
@@ -118,7 +108,7 @@ const allObj = [
     answers: ["compass", "the compass"]
   },
   {
-    name: 's12',
+    name: 's11',
     diff: 'Easy',
     clue: "The dorm which has the 'art colony' on the first four floors",
     img: '/spot12.jpg',
@@ -127,7 +117,7 @@ const allObj = [
     answers: ["johnson", "johnson hall"]
   },
   {
-    name: 's13',
+    name: 's12',
     diff: 'Hard',
     clue: "The art building where art majors can find the infinity wall/room",
     img: '/spot13.jpg',
@@ -136,7 +126,7 @@ const allObj = [
     answers: ["depot", "the depot"]
   },
   {
-      name: 's14',
+      name: 's13',
       diff: 'Medium',
       clue: "The oldest art building at VCU, home to photography majors!",
       img: '/spot14.jpg',
@@ -145,7 +135,7 @@ const allObj = [
       answers: ["pollak", "pollak building"]
   },
   {
-      name: 's15',
+      name: 's14',
       diff: 'Easy',
       clue: "VCU's main dining hall. You either love it or hate it...",
       img: '/spot15.jpg',
@@ -154,7 +144,7 @@ const allObj = [
       answers: ["shafer", "shafer dining", "shafer dining hall", "shafer court", "shafer court dining", "shafer court dining center"]
   },
   {
-      name: 's16',
+      name: 's15',
       diff: 'Easy',
       clue: "Where many classes are held and the building even has a basement",
       img: '/spot16.jpg',
@@ -163,7 +153,7 @@ const allObj = [
       answers: ["hibbs", "hibbs hall", "hibbs building"]
   },
   {
-      name: 's17',
+      name: 's16',
       diff: 'Medium',
       clue: "The dorm that used to be a hospital 😱",
       img: '/spot17.jpg',
@@ -172,7 +162,7 @@ const allObj = [
       answers: ["brandt", "brandt hall"]
   },
   {
-      name: 's18',
+      name: 's17',
       diff: 'Easy',
       clue: "A campus building where you can find food, ballrooms, video games, and an auditorium",
       img: '/spot18.jpg',
@@ -181,7 +171,7 @@ const allObj = [
       answers: ["commons", "the commons", "academic learning commons"]
   },
   {
-      name: 's19',
+      name: 's18',
       diff: 'Medium',
       clue: "An art building that's a home to sculpting and craft",
       img: '/spot19.jpg',
@@ -190,7 +180,7 @@ const allObj = [
       answers: ["the fab", "fab", "the fine arts building", "fine arts building", "the fine art building", "fine art building"]
   },
   {
-      name: 's20',
+      name: 's19',
       diff: 'Medium',
       clue: "Engineering building where you can find Computer Science on the 4th floor",
       img: '/spot20.png',
@@ -199,7 +189,7 @@ const allObj = [
       answers: ["engineering east", "engineering building east", "snead", "snead hall", "east engineering", "east engineering hall", "east hall"]
   },
   {
-      name: 's21',
+      name: 's20',
       diff: 'Hard',
       clue: "A place near the compass where you can catch the 'No Shame' Talent Show",
       img: '/spot21.jpg',
@@ -208,7 +198,7 @@ const allObj = [
       answers: ["shafer playhouse", "the shafer playhouse"]
   },
   {
-      name: 's22',
+      name: 's21',
       diff: "Easy",
       clue: "VCU's newest dorm",
       img: '/spot22.jpg',
@@ -266,50 +256,95 @@ $("#enter-answer").on("click", () => {
 
 function checkProgress(percentage) {
   if (percentage === "0%") {
-    $(".progress-bar").css("width", "1%");
+    $(".progress-bar").css("width", "1.3%");
     $(".progress-bar").css("background-color", "#FF0000");
-    $("#progress-bar-text").text("1%");
-  } else if (percentage === "1%") {
-    $(".progress-bar").css("width", "10%");
+    $("#progress-bar-text").text("1.3%");
+  } else if (percentage === "1.3%") {
+    $(".progress-bar").css("width", "6%");
     $(".progress-bar").css("background-color", "#FF3300");
-    $("#progress-bar-text").text("10%");
-  } else if (percentage === "10%") {
-    $("#twenty").click();
-    $(".progress-bar").css("width", "20%");
+    $("#progress-bar-text").text("6%");
+  } else if (percentage === "6%") {
+    $(".progress-bar").css("width", "10.7%");
     $(".progress-bar").css("background-color", "#FF6600");
-    $("#progress-bar-text").text("20%");
-  } else if (percentage === "20%") {
-    $(".progress-bar").css("width", "30%");
+    $("#progress-bar-text").text("10.7%");
+  } else if (percentage === "10.7%") {
+    $(".progress-bar").css("width", "15.4%");
     $(".progress-bar").css("background-color", "#FF9900");
-    $("#progress-bar-text").text("30%");
-  } else if (percentage === "30%") {
-    $(".progress-bar").css("width", "40%");
+    $("#progress-bar-text").text("15.4%");
+  } else if (percentage === "15.4%") {
+    $(".progress-bar").css("width", "20.1%");
     $(".progress-bar").css("background-color", "#FFCC00");
-    $("#progress-bar-text").text("40%");
-  } else if (percentage === "40%") {
-    $(".progress-bar").css("width", "50%");
+    $("#progress-bar-text").text("20.1%");
+  } else if (percentage === "20.1%") {
+    $(".progress-bar").css("width", "24.8%");
+    $(".progress-bar").css("background-color", "#FFEE00");
+    $("#progress-bar-text").text("24.8%");
+  } else if (percentage === "24.8%") {
+    $(".progress-bar").css("width", "29.5%");
     $(".progress-bar").css("background-color", "#FFFF00");
-    $("#progress-bar-text").text("50%");
-  } else if (percentage === "50%") {
-    $(".progress-bar").css("width", "60%");
+    $("#progress-bar-text").text("29.5%");
+  } else if (percentage === "29.5%") {
+    $(".progress-bar").css("width", "34.2%");
+    $(".progress-bar").css("background-color", "#EEFF00");
+    $("#progress-bar-text").text("34.2%");
+  } else if (percentage === "34.2%") {
+    $(".progress-bar").css("width", "38.9%");
+    $(".progress-bar").css("background-color", "#DDFF00");
+    $("#progress-bar-text").text("38.9%");
+  } else if (percentage === "38.9%") {
+    $(".progress-bar").css("width", "43.6%");
     $(".progress-bar").css("background-color", "#CCFF00");
-    $("#progress-bar-text").text("60%");
-  } else if (percentage === "60%") {
-    $(".progress-bar").css("width", "70%");
+    $("#progress-bar-text").text("43.6%");
+  } else if (percentage === "43.6%") {
+    $(".progress-bar").css("width", "48.3%");
+    $(".progress-bar").css("background-color", "#BBFF00");
+    $("#progress-bar-text").text("48.3%");
+  } else if (percentage === "48.3%") {
+    $(".progress-bar").css("width", "53%");
+    $(".progress-bar").css("background-color", "#AAFF00");
+    $("#progress-bar-text").text("53%");
+  } else if (percentage === "53%") {
+    $(".progress-bar").css("width", "57.7%");
     $(".progress-bar").css("background-color", "#99FF00");
-    $("#progress-bar-text").text("70%");
-  } else if (percentage === "70%") {
-    $(".progress-bar").css("width", "80%");
+    $("#progress-bar-text").text("57.7%");
+  } else if (percentage === "57.7%") {
+    $(".progress-bar").css("width", "62.4%");
+    $(".progress-bar").css("background-color", "#88FF00");
+    $("#progress-bar-text").text("62.4%");
+  } else if (percentage === "62.4%") {
+    $(".progress-bar").css("width", "67.1%");
+    $(".progress-bar").css("background-color", "#77FF00");
+    $("#progress-bar-text").text("67.1%");
+  } else if (percentage === "67.1%") {
+    $(".progress-bar").css("width", "71.8%");
     $(".progress-bar").css("background-color", "#66FF00");
-    $("#progress-bar-text").text("80%");
-  } else if (percentage === "80%") {
-    $(".progress-bar").css("width", "90%");
+    $("#progress-bar-text").text("71.8%");
+  } else if (percentage === "71.8%") {
+    $(".progress-bar").css("width", "76.5%");
+    $(".progress-bar").css("background-color", "#55FF00");
+    $("#progress-bar-text").text("76.5%");
+  } else if (percentage === "76.5%") {
+    $(".progress-bar").css("width", "81.2%");
+    $(".progress-bar").css("background-color", "#44FF00");
+    $("#progress-bar-text").text("81.2%");
+  } else if (percentage === "81.2%") {
+    $(".progress-bar").css("width", "85.9%");
     $(".progress-bar").css("background-color", "#33FF00");
-    $("#progress-bar-text").text("90%");
-  } else if (percentage === "90%") {
+    $("#progress-bar-text").text("85.9%");
+  } else if (percentage === "85.9%") {
+    $(".progress-bar").css("width", "90.6%");
+    $(".progress-bar").css("background-color", "#22FF00");
+    $("#progress-bar-text").text("90.6%");
+  } else if (percentage === "90.6%") {
+    $(".progress-bar").css("width", "95.3%");
+    $(".progress-bar").css("background-color", "#11FF00");
+    $("#progress-bar-text").text("95.3%");
+  } else if (percentage === "95.3%") {
     $(".progress-bar").css("width", "100%");
     $(".progress-bar").css("background-color", "#00FF00");
     $("#progress-bar-text").text("100%");
+    $("#final1").text("CONGRATUlATIONS!");
+    $("#final2").text("YOU WON!");
   } else if (percentage === "100%") {
   } else {
     $(".progress-bar").css("width", "0%");
