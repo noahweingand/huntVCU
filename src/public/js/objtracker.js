@@ -108,6 +108,78 @@ const allObj = [
     longitude: -77.453989,
     answers: ["cary st gym", "cary st. gym", "cary street gym"]
   },
+  {
+    name: 's11',
+    diff: 'Easy',
+    clue: "The center of campus where you can find club events and protesters",
+    img: '/spot11.jpg'
+  },
+  {
+      name: 's12',
+      diff: 'Easy',
+      clue: "The dorm which has the 'art colony' on the first four floors",
+      img: '/spot12.jpg'
+  },
+  {
+      name: 's13',
+      diff: 'Hard',
+      clue: "The art building where art majors can find the infinity wall/room",
+      img: '/spot13.jpg'
+  },
+  {
+      name: 's14',
+      diff: 'Medium',
+      clue: "The oldest art building at VCU, home to photography majors!",
+      img: '/spot14.jpg'
+  },
+  {
+      name: 's15',
+      diff: 'Easy',
+      clue: "VCU's main dining hall. You either love it or hate it...",
+      img: '/spot15.jpg'
+  },
+  {
+      name: 's16',
+      diff: 'Easy',
+      clue: "Where many classes are held and the building even has a basement",
+      img: '/spot16.jpg'
+  },
+  {
+      name: 's17',
+      diff: 'Medium',
+      clue: "The dorm that used to be a hospital 😱",
+      img: '/spot17.jpg'
+  },
+  {
+      name: 's18',
+      diff: 'Easy',
+      clue: "A campus building where you can find food, ballrooms, video games, and an auditorium",
+      img: '/spot18.jpg'
+  },
+  {
+      name: 's19',
+      diff: 'Medium',
+      clue: "An art building that's a home to sculpting and craft",
+      img: '/spot19.jpg'
+  },
+  {
+      name: 's20',
+      diff: 'Medium',
+      clue: "Engineering building where you can find Computer Science on the 4th floor",
+      img: '/spot20.png'
+  },
+  {
+      name: 's21',
+      diff: 'Hard',
+      clue: "A place near the compass where you can catch the 'No Shame' Talent Show",
+      img: '/spot21.jpg'
+  },
+  {
+      name: 's22',
+      diff: "Easy",
+      clue: "VCU's newest dorm",
+      img: '/spot22.jpg'
+  }
 ];
 
 // onclick method for each spot objective anchor thing
