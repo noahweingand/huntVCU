@@ -237,7 +237,7 @@ $.each(allObj, function (i, v) {
       $("#mapclue").attr("src", v.img).width("100%");
       longitude = v.longitude;
       latitude = v.latitude;
-      map.flyTo({ center: [longitude, latitude], zoom: 15.5 });
+      map.flyTo({ center: [longitude, latitude], zoom: 14.5 });
     });
   })(v);
 });
