@@ -21,7 +21,42 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+#mapclue {
+    height: 523px;
+    width: 431px;
+}
+
+@media only screen and (max-width: 1291px) {
+    #mapclue {
+        height: auto;
+        width: 100%;
+        max-height: 504px;
+        max-width: 415px;
+    }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 784px) {
+    .row.main-panel {
+        display: block;
+        border-style: none;
+        margin: auto;
+        padding: 0%;
+    }
+    .col-md-6.top-left {
+        border-style: solid;
+        border-color: #FFBA00;
+        min-width: 808px;
+    }
+    .col-md-6.top-right {
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-color: #FFBA00;
+        min-width: 808px;
+    }
+}
+
+@media only screen and (max-width: 784px) {
     .row.main-panel {
         border-style: none;
         padding: 0%;
@@ -71,6 +106,15 @@
     border-radius: 6px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+@media only screen and (max-width: 830px) {
+    .progress {
+        height: auto;
+        width: 100%;
+        max-height: 16px;
+        max-width: 500px;
+    }
 }
   
 .progress-bar {
