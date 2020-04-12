@@ -30,14 +30,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhdXJlYSIsImEiOiJjazZpYW9jdXYzMzhoM2VxZjkwe
             });
             */
 
-           var radius = 0.005;
+           var radius = 0.003; 
  
-           function pointOnCircle(angle) {
+           function pointOnCircle(angle, long, lat) {
            return {
            'type': 'Point',
-           'coordinates': [(Math.cos(angle) * radius)-77.45316296360596, (Math.sin(angle) * radius) + 37.548193997957185]
+           'coordinates': [(Math.cos(angle) * radius)+long, (Math.sin(angle) * radius) + lat]
            };
            }
+
+        var longitude = -77.45316296360596
+        var latitude = 37.548193997957185
 
 map.on('load', function() {
     map.addSource('point', {
@@ -50,15 +53,15 @@ map.on('load', function() {
         'source': 'point',
         'type': 'circle',
         'paint': {
-        'circle-radius': 10,
+        'circle-radius': 7,
         'circle-color': '#FF0000'
         }
         });
-         
+
         function animateMarker(timestamp) {
         // Update the data to a new position based on the animation timestamp. The
         // divisor in the expression `timestamp / 1000` controls the animation speed.
-        map.getSource('point').setData(pointOnCircle(timestamp /500));
+        map.getSource('point').setData(pointOnCircle(timestamp /500, longitude, latitude));
          
         // Request the next frame of the animation.
         requestAnimationFrame(animateMarker);
