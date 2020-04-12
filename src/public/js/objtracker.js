@@ -143,7 +143,7 @@ $("#enter-answer").on("click", () => {
   let obj = allObj[index]; 
 
   for(answer of obj.answers){
-      if(answer.toLowerCase() === input_answer.toLowerCase()){
+      if(answer === input_answer){
         $("#isCorrect").text("Correct!");
         element.parentElement.removeChild(element);
         let currentProgress = $("#progress-bar").text();
