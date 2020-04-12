@@ -247,10 +247,12 @@ $("#enter-answer").on("click", () => {
   let input_answer = $("#answer-box").val().toLowerCase();
   let element = document.querySelector('#'+chosenObj); 
 
-  let index = parseInt(chosenObj[1]) - 1; 
+  let index = parseInt(chosenObj.substring(1)) - 1; // parse for multi digit numbers correctly
   let obj = allObj[index]; 
+  console.log(obj); 
 
   for(answer of obj.answers){
+    console.log(answer); 
     if(answer.toLowerCase() === input_answer.toLowerCase()){
         $("#isCorrect").text("Correct!");
         element.parentElement.removeChild(element);
