@@ -1,4 +1,4 @@
-# CMSC-491
+# huntVCU
 Final project for CMSC 491 - User Interface Design
 # Installation
 Download Node.js and npm.
