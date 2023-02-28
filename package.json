@@ -18,7 +18,7 @@
   "homepage": "https://github.com/noahweingand/cmsc-491#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.0"
+    "hbs": "^4.2.0"
   },
   "devDependencies": {
     "prettier": "2.0.4"
